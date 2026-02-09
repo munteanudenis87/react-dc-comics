@@ -5,8 +5,65 @@
 }
 nav{
   display: flex;
-  justify-content: space-evenly;
+  padding-top: 3%;
 }
 ul{
   list-style-type: none;
+}
+li{
+  padding: 0.5rem;
+}
+main{
+  background-color: black;
+  /*height: 250px;*/
+}
+.main-content{
+  color: white;
+}
+.page-style{
+  width: 80%;
+  margin: 0 auto;
+}
+.header-style{
+  display: flex;
+  justify-content: space-between;
+}
+.comics-style{
+  background-color: rgb(47, 175, 250);
+}
+.comic-content{
+  display: flex;
+  padding: 2rem 0;
+}
+.comic-img{
+  height: 50px;
+}
+.comic-text{
+  padding: 0.8rem;
+  color: white;
+  padding-right: 7rem;
+}
+footer{
+  background-image: url(./img/footer-bg.jpg);
+  color: white;
+}
+.lower-footer{
+  background-color: rgb(32, 32, 32);
+}
+.cards-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.product-card{
+  flex-basis: 16.66%;
+  padding: 1rem;
+  color: white;
+}
+.product-card img {
+  display: block;
+  height: 210px;
+}
+.main-img-bk{
+  background-image: url(img/jumbotron.jpg);
 }

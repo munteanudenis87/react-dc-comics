@@ -1,7 +1,8 @@
 export default function Header() {
     return (<header>
+        <div className="page-style header-style">
         <figure>
-            <img src="" alt="" />
+            <img src="/dc-logo.png" alt="dc-logo.png" />
         </figure>
         <nav>
             <ul>
@@ -35,5 +36,6 @@ export default function Header() {
                 <li><a href=""></a>SHOP</li>
             </ul>
         </nav>
+        </div>
     </header>);
 }
