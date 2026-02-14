@@ -15,7 +15,6 @@ li{
 }
 main{
   background-color: black;
-  /*height: 250px;*/
 }
 .main-content{
   color: white;
@@ -27,6 +26,10 @@ main{
 .header-style{
   display: flex;
   justify-content: space-between;
+}
+.current-series{
+  inset-inline-start: 12%;
+  inset-block-start: 370px;
 }
 .comics-style{
   background-color: rgb(47, 175, 250);
@@ -46,18 +49,49 @@ main{
 footer{
   background-image: url(./img/footer-bg.jpg);
   color: white;
+  background-repeat: round;
+}
+.footer-logo-abs{
+  inset-inline-start: 50%;
+  inset-block-start: 175%;
 }
 .lower-footer{
+  display: flex;
   background-color: rgb(32, 32, 32);
+  padding: 1rem;
+
 }
+.footer-follow{
+  color: rgb(0, 144, 240);
+  font-size: medium;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+.footer-sign-in-btn{
+    border: solid rgb(0, 144, 240);
+    padding: 0.5rem;
+    color: white;
+    background-color: rgb(32, 32, 32);
+}
+.lower-footer-style{
+  display: flex;
+  justify-content: space-between;
+}
+.social-section{
+  display: flex;
+}
+.social-img{
+  padding: 0 0.5rem;
+}
+
 .cards-wrapper{
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
 .product-card{
-  flex-basis: 16.66%;
-  padding: 1rem;
+  flex-basis: 14%;
+  padding: 0.2rem;
   color: white;
 }
 .product-card img {
@@ -66,4 +100,9 @@ footer{
 }
 .main-img-bk{
   background-image: url(img/jumbotron.jpg);
+  height: 400px;
+}
+.load-more{
+  margin-left: 45%;
+  padding: 1rem;
 }

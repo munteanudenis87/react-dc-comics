@@ -152,24 +152,23 @@ const comics = [
     writers: ["Joëlle Jones"],
   },
 ];
+import ProductCard from "./ProductCard.jsx";
 
 const ProductList = () => {
-
     return (
-        <section id="products">
+        <section id="comics">
             <div className="container cards-wrapper">
-                {comics.map((product) => (
-                    <article className="product-card" key={product.id}>
-                        <img src={product.thumb} alt={product.title} />
-                        <h3>
-                            {product.title}
-                        </h3>
-                    </article>
+              {comics.map(singleProduct => (
+                    <ProductCard 
+                      key={singleProduct.id}
+                      thumb={singleProduct.thumb}
+                      title={singleProduct.title}
+                    />
                 ))}
             </div>
-
+            <div className="load-more"><button className="btn btn-primary">LOAD MORE</button></div>
         </section>
     )
 }
 
-export default ProductList
+export default ProductList;

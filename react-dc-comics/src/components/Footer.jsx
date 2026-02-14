@@ -2,10 +2,10 @@ export default function Footer() {
     return (<footer>
         <section className="page-style">
             <nav>
-                <div className="footer-col">
+                <div className="footer-col position-relative">
                     <div>
-                        <h4>DC COMICS</h4>
                         <ul>
+                            <li><h4>DC COMICS</h4></li>
                             <li><a href=""></a>Characters</li>
                             <li><a href=""></a>Comics</li>
                             <li><a href=""></a>Movies</li>
@@ -15,11 +15,9 @@ export default function Footer() {
                             <li><a href=""></a>News</li>
                         </ul>
                     </div>
-                </div>
-                <div className="footer-col">
                     <div>
-                        <h4>SHOP</h4>
                         <ul>
+                            <li><h4>SHOP</h4></li>
                             <li><a href=""></a>Shop DC</li>
                             <li><a href=""></a>Shop DC Collectibles</li>
                         </ul>
@@ -27,8 +25,8 @@ export default function Footer() {
                 </div>
                 <div className="footer-col">
                     <div>
-                        <h4>DC</h4>
                         <ul>
+                            <li><h4>DC</h4></li>
                             <li><a href=""></a>Terms Of Use</li>
                             <li><a href=""></a>Privasy policy (New)</li>
                             <li><a href=""></a>Ad Choices</li>
@@ -45,8 +43,8 @@ export default function Footer() {
                 </div>
                 <div className="footer-col">
                     <div>
-                        <h4>SITES</h4>
                         <ul>
+                            <li><h4>SITES</h4></li>
                             <li><a href=""></a>DC</li>
                             <li><a href=""></a>MAD Magazine</li>
                             <li><a href=""></a>DC Kids</li>
@@ -55,31 +53,35 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <figure>
+                <figure className="position-absolute footer-logo-abs">
                     <img src="dc-logo-bg.png" alt="dc-logo-bg.png" />
                 </figure>
             </nav>
         </section>
         <section className="lower-footer">
-            <div className="page-style">
-                <button>SIGN-UP NOW!</button>
+            <div className="page-style lower-footer-style">
+                <div>
+                    <button className="footer-sign-in-btn">SIGN-UP NOW!</button>
+                </div>
+                <div className="social-section">
+                    <h2 className="footer-follow">FOLLOW US</h2>
+                    <figure className="social-img">
+                        <img src="/footer-facebook.png" alt="footer-facebook.png" />
+                    </figure>
+                    <figure className="social-img">
+                        <img src="/footer-twitter.png" alt="footer-twitter.png" />
+                    </figure>
+                    <figure className="social-img">
+                        <img src="/footer-youtube.png" alt="footer-youtube.png" />
+                    </figure>
+                    <figure className="social-img">
+                        <img src="/footer-pinterest.png" alt="footer-pinterest.png" />
+                    </figure>
+                    <figure className="social-img">
+                        <img src="/footer-periscope.png" alt="footer-periscope.png" />
+                    </figure>
+                </div>
             </div>
-            <h2>FOLLOW US</h2>
-            <figure>
-                <img src="/footer-facebook.png" alt="footer-facebook.png" />
-            </figure>
-            <figure>
-                <img src="/footer-twitter.png" alt="footer-twitter.png" />
-            </figure>
-            <figure>
-                <img src="/footer-youtube.png" alt="footer-youtube.png" />
-            </figure>
-            <figure>
-                <img src="/footer-pinterest.png" alt="footer-pinterest.png" />
-            </figure>
-            <figure>
-                <img src="/footer-periscope.png" alt="footer-periscope.png" />
-            </figure>
-        </section>
+        </section>  
     </footer>);
 }
